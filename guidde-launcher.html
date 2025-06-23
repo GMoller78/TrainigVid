@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Guide...</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; background-color: #f0f2f5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        #launchButton {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #0078d4;
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+        #launchButton:hover { background-color: #005a9e; }
+        #guidde-iframe { display: none; border: none; }
+    </style>
+</head>
+<body>
+
+    <button id="launchButton">Click to Launch Fullscreen</button>
+
+    <script>
+        // --- PASTE YOUR GUIDDE EMBED URL HERE ---
+        const guiddeUrl = "https://embed.app.guidde.com/playbooks/uTooeLMU2yVGB9tey5weWK";
+        
+        const launchButton = document.getElementById('launchButton');
+        
+        launchButton.addEventListener('click', function() {
+            // Create the iframe when the button is clicked
+            let iframe = document.createElement('iframe');
+            iframe.setAttribute('id', 'guidde-iframe');
+            iframe.setAttribute('src', guiddeUrl + "?autoplay=1"); // Autoplay is a nice touch
+            iframe.setAttribute('allow', 'fullscreen; autoplay');
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            
+            // Clear the body and append the iframe
+            document.body.innerHTML = ''; 
+            document.body.appendChild(iframe);
+            
+            // Request fullscreen on the whole page body
+            const elem = document.documentElement; // Full page
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
