@@ -1,62 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Guide...</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; background-color: #f0f2f5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        #launchButton {
-            padding: 20px 40px;
-            font-size: 1.5em;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background-color: #0078d4;
-            color: white;
-            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
-            transition: background-color 0.2s;
-        }
-        #launchButton:hover { background-color: #005a9e; }
-        #guidde-iframe { display: none; border: none; }
-    </style>
-</head>
-<body>
 
-    <button id="launchButton">Click to Launch</button>
-
-    <script>
-        // --- PASTE YOUR GUIDDE EMBED URL HERE ---
-        const guiddeUrl = "https://embed.app.guidde.com/playbooks/uTooeLMU2yVGB9tey5weWK";
-        
-        const launchButton = document.getElementById('launchButton');
-        
-        launchButton.addEventListener('click', function() {
-            // Create the iframe when the button is clicked
-            let iframe = document.createElement('iframe');
-            iframe.setAttribute('id', 'guidde-iframe');
-            iframe.setAttribute('src', guiddeUrl + "?autoplay=1"); // Autoplay is a nice touch
-            iframe.setAttribute('allow', 'fullscreen; autoplay');
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
+      <div>
+          <div style="text-align:center"><div><h2>How to capture data using Share point</h2></div></div>
+          
+     <div style="position:relative;padding-bottom:56.25%;">
+     <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;border-radius: 10px" 
+      src="https://embed.app.guidde.com/playbooks/uTooeLMU2yVGB9tey5weWK"
+      title="How to capture data using Share point"
+      frameborder="0"
+      referrerpolicy="unsafe-url"
+      allowfullscreen="true"
+      allow="clipboard-write"
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-forms allow-same-origin allow-presentation"></iframe>
+     </div>
+          
+          <div style="margin-top:16px; margin-bottom:16px" >
+            This guide will walk you through capturing incident data efficiently using SharePoint for employee training purposes
             
-            // Clear the body and append the iframe
-            document.body.innerHTML = ''; 
-            document.body.appendChild(iframe);
+        </div> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">
+                      Go to <a href="https://drdgold.sharepoint.com" target="_blank">drdgold.sharepoint.com</a>
+                  </h3> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">1. Introduction</h3> <div style="margin-top:16px; margin-bottom:16px" >
+             From accessing forms to adding new items and customizing columns, follow these engaging instructions to streamline your data capturing process.
             
-            // Request fullscreen on the whole page body
-            const elem = document.documentElement; // Full page
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.webkitRequestFullscreen) { /* Safari */
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { /* IE11 */
-                elem.msRequestFullscreen();
-            }
-        });
-    </script>
-
-</body>
-</html>
-
-
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F3hssGYqNAPG54pKNZPeq7g_doc.png?alt=media&amp;token=064bc764-93e1-4364-b083-1bf04a074890" alt="Introduction" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">2. Click any of the links</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Click on "Near Misses" to access the incident report form.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F2eBDUHuS8xALE931c5CBmq_doc.png?alt=media&amp;token=ec9fc11e-89e4-4e39-bcfd-e81dc8bff424" alt="Click any of the links" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">3. Click "Edit in grid view"</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Select "Edit in grid view" to modify the data display format.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F84YoQws1dpbk7ijEknkY1e_doc.png?alt=media&amp;token=4ce447fa-a9ff-447f-b126-1b6b3bafd198" alt="Click 'Edit in grid view'" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">4. Scroll to the bottom of the page to add new records</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Add a new column by clicking on the specified field while describing the incident.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F8ZHfNs9ZNRTxQz6x5ZmA6B_doc.png?alt=media&amp;token=abf859e8-5308-4fa9-adce-4863b6fa0c61" alt="Scroll to the bottom of the page to add new records" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">5. .</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Add a new column by clicking on the specified field while describing the incident.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FpYGTjYKc3s37V12MEG4XhS_doc.png?alt=media&amp;token=bfa37c72-67ac-44bf-ad2a-81abc0819ff9" alt="." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">6. Click "Add new item"</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            To enter a new incident, click on "Add new item".
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2Fj1puJcNGxwo2ignPKH7faR_doc.png?alt=media&amp;token=d9a632a5-76f9-4a4f-9dc4-11a238137f65" alt="Click 'Add new item'" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">7. Use tab, or click on the next field to progress</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Navigate to the designated section.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FrFsq6pp9tRht8ZNFxexkxu_doc.png?alt=media&amp;token=0ee6b61b-57b0-46cb-9b48-bdc0f056c0db" alt="Use tab, or click on the next field to progress" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">8. Populate the fields as you would on an excel spreadsheet.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Fill in "SP17045/03"
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FdeGt4j12TGkRAHGEcEjm7X_doc.png?alt=media&amp;token=1fd5f5c0-d25f-48b1-b040-42030402f07e" alt="Populate the fields as you would on an excel spreadsheet." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">9. Continue, until all the fields are populted.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Access the relevant area by clicking here.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2Fot5EiR58SmxM5rxUnoaygT_doc.png?alt=media&amp;token=671dfdf0-b1b3-4e53-bced-999d5b26e3e9" alt="Continue, until all the fields are populted." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">10. Some fields will provide a dropdown for selection.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Proceed by clicking on this option.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FqsrynetQHxeWyMNx2aawRz_doc.png?alt=media&amp;token=739a4568-4ed4-4986-ac8f-8853b606ea78" alt="Some fields will provide a dropdown for selection." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">11. Make sure you select the correct item from the list</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Choose the "Lost Time Injury (3)" option from the menu.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F1kE8JwebcK86RpqvdRUZwN_doc.png?alt=media&amp;token=183fe5da-adfb-4f33-abb5-2c7e0c784fff" alt="Make sure you select the correct item from the list" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">12. Use the scroll bar to mover to the right, ensuring that you have captured all the fields.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Add a new column by clicking on the specified field while describing the incident.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FcV2j8JjUYSYneMpKPTj9M1_doc.png?alt=media&amp;token=358b1fd3-4559-4242-b217-56583013b81e" alt="Use the scroll bar to mover to the right, ensuring that you have captured all the fields." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">13. When entering a date, you will be presented with a calendar.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Select the option "11" from the menu.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F8hSrd3ffVbir4QGupW34CW_doc.png?alt=media&amp;token=824d0aaa-e909-4962-aa0f-c80593258b94" alt="When entering a date, you will be presented with a calendar." /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">14. Ensure you have selected the correct date, and click the "check" mark to complete your selection</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            Click here to proceed.
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2FuWCGcyssBcVEzNYbVz86fj_doc.png?alt=media&amp;token=50dbba89-c18e-4676-8987-8038cae7ede5" alt="Ensure you have selected the correct date, and click the 'check' mark to complete your selection" /> <h3 style="font-size: 1.17em; font-weight: bold; margin: 1em 0; width: 100%; word-break: break-word; max-width:100%;">15. When you have captured all the information needed, Click "Exit grid view" to complete the process.</h3> <div style="margin-top:16px; margin-bottom:16px" >
+            To exit the grid view, select "Exit grid view".
+            
+        </div> <img width="100%" src="https://static.guidde.com/v0/qg%2F2eU5khEQLpNQvEE7NEJCCpVRsgk2%2FuTooeLMU2yVGB9tey5weWK%2F4nS5LViGC39TJVxLSPhSM2_doc.png?alt=media&amp;token=cd3d4cb5-b9d9-4098-a2ce-22704de56741" alt="When you have captured all the information needed, Click 'Exit grid view' to complete the process." /> <div style="margin-top:16px; margin-bottom:16px" >
+            This guide covered detailed instructions on capturing incident data in SharePoint for employee training. From accessing and editing data to adding new items and customizing columns, you can efficiently manage and document incidents using the provided engaging steps.
+            
+        </div>
+          <div style="margin-right:2px"><a href="https://www.guidde.com" rel="noreferrer" target="_blank" style="text-decoration:none;color:#000000">Powered by <strong style="color:#CB0000">guidde</strong></a></div>
+      </div>
+  
